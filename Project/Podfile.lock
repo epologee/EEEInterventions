@@ -1,0 +1,23 @@
+PODS:
+  - EEEInterventions (0.1.0)
+  - Kiwi (2.2.3):
+    - Kiwi/SenTestingKit
+  - Kiwi/ARC (2.2.3)
+  - Kiwi/NonARC (2.2.3)
+  - Kiwi/SenTestingKit (2.2.3):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+
+DEPENDENCIES:
+  - EEEInterventions (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  EEEInterventions:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EEEInterventions: 93e26374748b9b1f1f316d167f4b23c4ea185df6
+  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+
+COCOAPODS: 0.28.0

@@ -1,7 +1,7 @@
-pod "EEEInterventions", :path => "../"
-
-target "Demo" do
+target "EEEInterventions" do
+  pod "EEEInterventions", :path => "../"
 end
 
-target "DemoTests" do
+target "EEEInterventionsTests" do
+  pod "Kiwi"
 end
