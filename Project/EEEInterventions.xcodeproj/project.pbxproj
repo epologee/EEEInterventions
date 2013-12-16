@@ -16,6 +16,7 @@
 		953E1781185F270400EB0E40 /* libEEEInterventions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 953E1769185F270400EB0E40 /* libEEEInterventions.a */; };
 		953E1787185F270400EB0E40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 953E1785185F270400EB0E40 /* InfoPlist.strings */; };
 		953E1794185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E1793185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m */; };
+		E420701AE45E8A7D8A364281 /* EEECyclicSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207E62C068BF282C25E572 /* EEECyclicSubclass.m */; };
 		E420724186A725E28B8B6E7D /* EEEBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = E420704616BC405D68AFBD3D /* EEEBeacon.m */; };
 		E42073ECCC43CB8571A5C668 /* EEECyclicDelegateRetainerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E42077D25DAEFCA15D39B14D /* EEECyclicDelegateRetainerSpec.m */; };
 		E4207E66C3B647274C292EE3 /* EEEDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207FE9EFADC43C18BE588F /* EEEDelegate.m */; };
@@ -65,6 +66,8 @@
 		E42077D25DAEFCA15D39B14D /* EEECyclicDelegateRetainerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEECyclicDelegateRetainerSpec.m; sourceTree = "<group>"; };
 		E42079EED960832E4A1A4A1E /* EEEDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEDelegate.h; sourceTree = "<group>"; };
 		E4207C1B8AFF974142A480EE /* EEESplittable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEESplittable.m; sourceTree = "<group>"; };
+		E4207CAF7695D1E23F7A34A0 /* EEECyclicSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEECyclicSubclass.h; sourceTree = "<group>"; };
+		E4207E62C068BF282C25E572 /* EEECyclicSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEECyclicSubclass.m; sourceTree = "<group>"; };
 		E4207F825073033808B085D1 /* EEEBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEBeacon.h; sourceTree = "<group>"; };
 		E4207FE9EFADC43C18BE588F /* EEEDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEDelegate.m; sourceTree = "<group>"; };
 		F0917314F1A947B4ABC96C7D /* libPods-EEEInterventions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEEInterventions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +182,8 @@
 				E42079EED960832E4A1A4A1E /* EEEDelegate.h */,
 				E420704616BC405D68AFBD3D /* EEEBeacon.m */,
 				E4207F825073033808B085D1 /* EEEBeacon.h */,
+				E4207E62C068BF282C25E572 /* EEECyclicSubclass.m */,
+				E4207CAF7695D1E23F7A34A0 /* EEECyclicSubclass.h */,
 			);
 			path = CyclicDelegateRetainer;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				E4207FDA89E3C052A9F9C217 /* EEESplittable.m in Sources */,
 				E4207E66C3B647274C292EE3 /* EEEDelegate.m in Sources */,
 				E420724186A725E28B8B6E7D /* EEEBeacon.m in Sources */,
+				E420701AE45E8A7D8A364281 /* EEECyclicSubclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

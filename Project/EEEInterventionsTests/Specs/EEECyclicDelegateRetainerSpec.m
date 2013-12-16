@@ -10,11 +10,12 @@
 #import "EEECyclicDelegateRetainer.h"
 #import "EEEBeacon.h"
 #import "EEEDelegate.h"
+#import "EEECyclicSubclass.h"
 
 SPEC_BEGIN(EEECyclicDelegateRetainerSpec)
 
         describe(@"EEECyclicDelegateRetainer", ^{
-            context(@"with a delegate stack set up", ^{
+            context(@"composition", ^{
                 __block EEEBeacon *beacon;
                 __block EEECyclicDelegateRetainer *sut;
 
@@ -37,6 +38,25 @@ SPEC_BEGIN(EEECyclicDelegateRetainerSpec)
                     [sut breakRetainCycle];
 
                     [[[sut delegate] should] beNil];
+                });
+            });
+
+            context(@"inheritance", ^{
+                it(@"allows subclassing", ^{
+                    EEECyclicSubclass *subSut = [[EEECyclicSubclass alloc] initWithDelegate:[[EEEDelegate alloc] init]];
+                    [[subSut.delegate should] beNonNil];
+
+                    [subSut breakRetainCycle];
+
+                    [[subSut.delegate should] beNil];
+                });
+
+                it(@"performs selectors on the subclass if the delegate does not respond", ^{
+                    EEECyclicSubclass *subSut = [[EEECyclicSubclass alloc] initWithDelegate:[[EEEDelegate alloc] init]];
+
+                    [[subSut should] receive:@selector(fallbackMethod)];
+
+                    [subSut fallbackMethod];
                 });
             });
         });
