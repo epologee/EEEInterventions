@@ -16,7 +16,8 @@
 		953E177E185F270400EB0E40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953E177D185F270400EB0E40 /* UIKit.framework */; };
 		953E1781185F270400EB0E40 /* libEEEInterventions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 953E1769185F270400EB0E40 /* libEEEInterventions.a */; };
 		953E1787185F270400EB0E40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 953E1785185F270400EB0E40 /* InfoPlist.strings */; };
-		953E1789185F270400EB0E40 /* EEEInterventionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E1788185F270400EB0E40 /* EEEInterventionsTests.m */; };
+		953E1794185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E1793185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m */; };
+		E4207D46C986612D8FB3383D /* EEESplittable.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207B2BAC235A76A2DB8CBC /* EEESplittable.m */; };
 		F67A090D8EA345FEA9063CD4 /* libPods-EEEInterventionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9556A95C34CB095FB8483 /* libPods-EEEInterventionsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +57,10 @@
 		953E177D185F270400EB0E40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		953E1784185F270400EB0E40 /* EEEInterventionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EEEInterventionsTests-Info.plist"; sourceTree = "<group>"; };
 		953E1786185F270400EB0E40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		953E1788185F270400EB0E40 /* EEEInterventionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEEInterventionsTests.m; sourceTree = "<group>"; };
+		953E1793185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEMethodInvocationSplitterSpec.m; sourceTree = "<group>"; };
 		DA59BCB5841944DBB9998699 /* Pods-EEEInterventions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEEInterventions.xcconfig"; path = "Pods/Pods-EEEInterventions.xcconfig"; sourceTree = "<group>"; };
+		E4207B2BAC235A76A2DB8CBC /* EEESplittable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEESplittable.m; sourceTree = "<group>"; };
+		E4207D68B79B18F7347F7B7E /* EEESplittable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEESplittable.h; sourceTree = "<group>"; };
 		F0917314F1A947B4ABC96C7D /* libPods-EEEInterventions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEEInterventions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,8 +143,9 @@
 		953E1782185F270400EB0E40 /* EEEInterventionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				953E1788185F270400EB0E40 /* EEEInterventionsTests.m */,
+				953E1792185F281300EB0E40 /* Specs */,
 				953E1783185F270400EB0E40 /* Supporting Files */,
+				E42072D8660CF73FA57B7333 /* Helpers */,
 			);
 			path = EEEInterventionsTests;
 			sourceTree = "<group>";
@@ -153,6 +157,23 @@
 				953E1785185F270400EB0E40 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		953E1792185F281300EB0E40 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				953E1793185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		E42072D8660CF73FA57B7333 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E4207B2BAC235A76A2DB8CBC /* EEESplittable.m */,
+				E4207D68B79B18F7347F7B7E /* EEESplittable.h */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953E1789185F270400EB0E40 /* EEEInterventionsTests.m in Sources */,
+				953E1794185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m in Sources */,
+				E4207D46C986612D8FB3383D /* EEESplittable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

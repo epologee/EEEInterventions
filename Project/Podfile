@@ -3,5 +3,5 @@ target "EEEInterventions" do
 end
 
 target "EEEInterventionsTests" do
-  pod "Kiwi"
+  pod "Kiwi/XCTest"
 end
