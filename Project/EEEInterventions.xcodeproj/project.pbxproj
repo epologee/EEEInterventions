@@ -13,11 +13,13 @@
 		953E1774185F270400EB0E40 /* EEEInterventions.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E1773185F270400EB0E40 /* EEEInterventions.m */; };
 		953E177B185F270400EB0E40 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953E177A185F270400EB0E40 /* XCTest.framework */; };
 		953E177C185F270400EB0E40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953E176C185F270400EB0E40 /* Foundation.framework */; };
-		953E177E185F270400EB0E40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953E177D185F270400EB0E40 /* UIKit.framework */; };
 		953E1781185F270400EB0E40 /* libEEEInterventions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 953E1769185F270400EB0E40 /* libEEEInterventions.a */; };
 		953E1787185F270400EB0E40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 953E1785185F270400EB0E40 /* InfoPlist.strings */; };
 		953E1794185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E1793185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m */; };
-		E4207D46C986612D8FB3383D /* EEESplittable.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207B2BAC235A76A2DB8CBC /* EEESplittable.m */; };
+		E420724186A725E28B8B6E7D /* EEEBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = E420704616BC405D68AFBD3D /* EEEBeacon.m */; };
+		E42073ECCC43CB8571A5C668 /* EEECyclicDelegateRetainerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E42077D25DAEFCA15D39B14D /* EEECyclicDelegateRetainerSpec.m */; };
+		E4207E66C3B647274C292EE3 /* EEEDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207FE9EFADC43C18BE588F /* EEEDelegate.m */; };
+		E4207FDA89E3C052A9F9C217 /* EEESplittable.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207C1B8AFF974142A480EE /* EEESplittable.m */; };
 		F67A090D8EA345FEA9063CD4 /* libPods-EEEInterventionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B9556A95C34CB095FB8483 /* libPods-EEEInterventionsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,13 +56,17 @@
 		953E1773185F270400EB0E40 /* EEEInterventions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEEInterventions.m; sourceTree = "<group>"; };
 		953E1779185F270400EB0E40 /* EEEInterventionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEEInterventionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		953E177A185F270400EB0E40 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		953E177D185F270400EB0E40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		953E1784185F270400EB0E40 /* EEEInterventionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EEEInterventionsTests-Info.plist"; sourceTree = "<group>"; };
 		953E1786185F270400EB0E40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		953E1793185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEMethodInvocationSplitterSpec.m; sourceTree = "<group>"; };
 		DA59BCB5841944DBB9998699 /* Pods-EEEInterventions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEEInterventions.xcconfig"; path = "Pods/Pods-EEEInterventions.xcconfig"; sourceTree = "<group>"; };
-		E4207B2BAC235A76A2DB8CBC /* EEESplittable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEESplittable.m; sourceTree = "<group>"; };
-		E4207D68B79B18F7347F7B7E /* EEESplittable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEESplittable.h; sourceTree = "<group>"; };
+		E420704616BC405D68AFBD3D /* EEEBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEBeacon.m; sourceTree = "<group>"; };
+		E42071E7F88BD79F3BAEA07E /* EEESplittable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEESplittable.h; sourceTree = "<group>"; };
+		E42077D25DAEFCA15D39B14D /* EEECyclicDelegateRetainerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEECyclicDelegateRetainerSpec.m; sourceTree = "<group>"; };
+		E42079EED960832E4A1A4A1E /* EEEDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEDelegate.h; sourceTree = "<group>"; };
+		E4207C1B8AFF974142A480EE /* EEESplittable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEESplittable.m; sourceTree = "<group>"; };
+		E4207F825073033808B085D1 /* EEEBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEBeacon.h; sourceTree = "<group>"; };
+		E4207FE9EFADC43C18BE588F /* EEEDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEDelegate.m; sourceTree = "<group>"; };
 		F0917314F1A947B4ABC96C7D /* libPods-EEEInterventions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEEInterventions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				953E177B185F270400EB0E40 /* XCTest.framework in Frameworks */,
-				953E177E185F270400EB0E40 /* UIKit.framework in Frameworks */,
 				953E1781185F270400EB0E40 /* libEEEInterventions.a in Frameworks */,
 				953E177C185F270400EB0E40 /* Foundation.framework in Frameworks */,
 				F67A090D8EA345FEA9063CD4 /* libPods-EEEInterventionsTests.a in Frameworks */,
@@ -115,7 +120,6 @@
 			children = (
 				953E176C185F270400EB0E40 /* Foundation.framework */,
 				953E177A185F270400EB0E40 /* XCTest.framework */,
-				953E177D185F270400EB0E40 /* UIKit.framework */,
 				F0917314F1A947B4ABC96C7D /* libPods-EEEInterventions.a */,
 				94B9556A95C34CB095FB8483 /* libPods-EEEInterventionsTests.a */,
 			);
@@ -163,17 +167,38 @@
 			isa = PBXGroup;
 			children = (
 				953E1793185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m */,
+				E42077D25DAEFCA15D39B14D /* EEECyclicDelegateRetainerSpec.m */,
 			);
 			path = Specs;
+			sourceTree = "<group>";
+		};
+		E42071CB02B43F81073C7777 /* CyclicDelegateRetainer */ = {
+			isa = PBXGroup;
+			children = (
+				E4207FE9EFADC43C18BE588F /* EEEDelegate.m */,
+				E42079EED960832E4A1A4A1E /* EEEDelegate.h */,
+				E420704616BC405D68AFBD3D /* EEEBeacon.m */,
+				E4207F825073033808B085D1 /* EEEBeacon.h */,
+			);
+			path = CyclicDelegateRetainer;
 			sourceTree = "<group>";
 		};
 		E42072D8660CF73FA57B7333 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E4207B2BAC235A76A2DB8CBC /* EEESplittable.m */,
-				E4207D68B79B18F7347F7B7E /* EEESplittable.h */,
+				E4207F343B2FDA392546165A /* MethodInvocationSplitter */,
+				E42071CB02B43F81073C7777 /* CyclicDelegateRetainer */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E4207F343B2FDA392546165A /* MethodInvocationSplitter */ = {
+			isa = PBXGroup;
+			children = (
+				E42071E7F88BD79F3BAEA07E /* EEESplittable.h */,
+				E4207C1B8AFF974142A480EE /* EEESplittable.m */,
+			);
+			path = MethodInvocationSplitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				953E1794185F281D00EB0E40 /* EEEMethodInvocationSplitterSpec.m in Sources */,
-				E4207D46C986612D8FB3383D /* EEESplittable.m in Sources */,
+				E42073ECCC43CB8571A5C668 /* EEECyclicDelegateRetainerSpec.m in Sources */,
+				E4207FDA89E3C052A9F9C217 /* EEESplittable.m in Sources */,
+				E4207E66C3B647274C292EE3 /* EEEDelegate.m in Sources */,
+				E420724186A725E28B8B6E7D /* EEEBeacon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
